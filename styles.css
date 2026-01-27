@@ -306,6 +306,7 @@ a {
 /* Detailed Pages Styles */
 .wide-container {
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .flex-row {
