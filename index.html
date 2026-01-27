@@ -4,121 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robots in the World - Future of Robotics</title>
-    <!-- Google Fonts -->
+    <title>Robots in the World - 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="glass-header">
-        <div class="container nav-container">
-            <a href="#" class="logo">ROBO<span class="highlight">WORLD</span></a>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">ROBOTS<span class="highlight">WORLD</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="humanoid.html">Humanoid Robots</a></li>
                 <li><a href="industrial.html">Industrial Robots</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="home" class="hero-section">
-        <div class="hero-bg" style="background-image: url('hero_background_1769535449980.png');"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="fade-in-up">Robots in the <br><span class="gradient-text">World</span></h1>
-            <p class="fade-in-up delay-1">Explore the fascinating realm where AI meets mechanical precision. The future
-                is automated.</p>
-            <a href="#intro" class="btn-glow fade-in-up delay-2">Explore the Future</a>
-        </div>
+        </nav>
     </header>
 
-    <!-- Intro Section -->
-    <section id="intro" class="section-padding intro-section">
-        <div class="container text-center">
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Robots in the World</h1>
+                <p class="hero-subtitle">The Future is Now</p>
+                <a href="#intro" class="cta-button">Explore</a>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Intro Section -->
+        <section id="intro" class="section-container">
             <h2 class="section-title">Welcome to the World of Robots</h2>
-            <p class="section-desc">
+            <p class="section-text">
                 Dive into the fascinating realm of robotics and Artificial Intelligence. Here, we explore how these
                 incredible machines are transforming industries, healthcare, and our daily lives. Join us on a journey
                 into the future!
             </p>
-        </div>
-    </section>
+        </section>
 
-    <!-- Features Section -->
-    <section class="section-padding features-section">
-        <div class="container">
-            <div class="grid-2">
-                <!-- Humanoid Card -->
-                <div class="feature-card" id="humanoid">
-                    <div class="card-image">
-                        <img src="humanoid_robot_1769535474644.png" alt="Humanoid Robot">
-                        <div class="card-overlay">
-                            <h3>Humanoid Robots</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>Designed to interact with humans and perform tasks in our environment with unprecedented
-                            agility and intelligence.</p>
-                        <a href="humanoid.html" class="btn-outline">Learn More</a>
-                    </div>
+        <!-- Robots Grid Section -->
+        <section class="grid-container">
+            <div class="card" id="humanoid">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop"
+                        alt="Humanoid Robots" class="card-img">
                 </div>
-
-                <!-- Industrial Card -->
-                <div class="feature-card" id="industrial">
-                    <div class="card-image">
-                        <img src="industrial_robot_1769535499517.png" alt="Industrial Robot">
-                        <div class="card-overlay">
-                            <h3>Industrial Robots</h3>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <p>The backbone of modern manufacturing. Precision, speed, and endurance that powers the global
-                            supply chain.</p>
-                        <a href="industrial.html" class="btn-outline">Learn More</a>
-                    </div>
+                <div class="card-content">
+                    <h3>Humanoid Robots</h3>
+                    <p>Discover robots built to look and act like humans, pushing the boundaries of social interaction
+                        and AI.</p>
+                    <a href="humanoid.html" class="read-more">Learn More &rarr;</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section-padding about-section">
-        <div class="container">
-            <h2 class="section-title text-center">About Us</h2>
-            <div class="about-content">
-                <p><strong>Who are we?</strong> This website was designed by <span class="highlight">Omar
-                        Mustafa</span>, a student passionate about technology and the future of robotics.</p>
-                <p><strong>Our Mission:</strong> To simplify complex robotics concepts and share knowledge about how
-                    these machines are changing our world.</p>
-                <p><strong>Course / Project:</strong> Created for the <span class="highlight">Future Tech
-                        Initiative</span> course.</p>
-                <p><strong>Contact:</strong> Thanks for visiting! If you have questions, feel free to ask.</p>
+            <div class="card" id="industrial">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+                        alt="Industrial Robots" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>Industrial Robots</h3>
+                    <p>Explore the machines powering modern manufacturing, automation, and heavy-duty operations.</p>
+                    <a href="industrial.html" class="read-more">Learn More &rarr;</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Robots World - Designed by Omar Mustafa</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Instagram</a>
+        <!-- About Preview / Additional Info -->
+        <section id="about" class="section-container bg-darker">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content" style="text-align: left; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                <p style="margin-bottom: 1rem;"><strong style="color: #fff;">Who are we?</strong> This website was
+                    designed by <strong style="color: var(--primary-color);">Omar Mustafa</strong>, a student passionate
+                    about technology and the future of robotics.</p>
+                <p style="margin-bottom: 1rem;"><strong style="color: #fff;">Our Mission:</strong> To simplify complex
+                    robotics concepts and share knowledge about how these machines are changing our world.</p>
+                <p style="margin-bottom: 1rem;"><strong style="color: #fff;">Course / Project:</strong> Created for the
+                    <strong style="color: var(--primary-color);">Future Tech Initiative</strong> course.
+                </p>
+                <p><strong style="color: #fff;">Contact:</strong> Thanks for visiting! If you have questions, feel free
+                    to ask.</p>
             </div>
-        </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Robots World - Designed by Omar Mustafa</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>

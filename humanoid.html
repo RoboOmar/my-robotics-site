@@ -5,239 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humanoid Robots - Robots in the World</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Page-specific overrides */
-        .page-header {
-            height: 60vh;
-            background-image: url('hero_background_1769535449980.png');
-            /* Reusing hero for consistancy or new one */
-            background-position: center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-
-        .page-header h1 {
-            font-size: 4rem;
-            z-index: 2;
-            text-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
-        }
-
-        .content-section {
-            padding: 60px 0;
-            background: linear-gradient(180deg, var(--bg-color) 0%, #0a1120 100%);
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-            margin-bottom: 80px;
-        }
-
-        .info-text h2 {
-            font-family: var(--font-heading);
-            color: var(--accent-color);
-            margin-bottom: 20px;
-        }
-
-        .info-text p,
-        .info-text ul {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .info-text ul {
-            list-style: none;
-        }
-
-        .info-text li {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .info-text li::before {
-            content: '•';
-            color: var(--accent-color);
-            position: absolute;
-            left: 0;
-            font-size: 1.5rem;
-            line-height: 1;
-        }
-
-        .info-text strong {
-            color: #fff;
-        }
-
-        .image-container img {
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
-            border: 1px solid var(--glass-border);
-        }
-
-        .full-width-section {
-            margin-bottom: 80px;
-        }
-
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            /* 16:9 */
-            height: 0;
-            overflow: hidden;
-            border-radius: 20px;
-            border: 1px solid var(--glass-border);
-            margin-top: 40px;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-
-            .info-grid,
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="glass-header">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">ROBO<span class="highlight">WORLD</span></a>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">ROBOTS<span class="highlight">WORLD</span></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#" class="active">Humanoid Robots</a></li>
-                <li><a href="industrial.html">Industrial Robots</a></li>
+                <li><a href="humanoid.html" class="active">Humanoid Robots</a></li>
+                <li><a href="index.html#industrial">Industrial Robots</a></li>
                 <li><a href="index.html#about">About Us</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="page-header">
-        <div class="hero-overlay"></div>
-        <h1 class="fade-in-up">Humanoid <span class="gradient-text">Robots</span></h1>
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <section class="content-section">
-        <div class="container">
-
-            <!-- Intro & Features -->
-            <div class="info-grid fade-in-up">
-                <div class="image-container">
-                    <img src="humanoid_robot_1769535474644.png" alt="Humanoid Robot Exhibition">
-                </div>
-                <div class="info-text">
-                    <h2>What are Humanoid Robots?</h2>
-                    <p>Humanoid robots are designed to look and act like humans. They have a head, torso, two arms, and
-                        two legs.</p>
-
-                    <h2>Key Features:</h2>
-                    <ul>
-                        <li><strong>Interaction:</strong> They can talk and interact with people socially.</li>
-                        <li><strong>Movement:</strong> They can walk, jump, and even dance.</li>
-                        <li><strong>Uses:</strong> Customer service, healthcare assistants, and research.</li>
-                    </ul>
-                </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero"
+            style="height: 60vh; background-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Humanoid Robots</h1>
+                <p class="hero-subtitle">The closest machines to us</p>
             </div>
+        </section>
 
-            <!-- How they Work & Examples -->
-            <div class="full-width-section info-text fade-in-up delay-1">
-                <h2>How they Work</h2>
-                <ul>
-                    <li><strong>Sensors (The Senses):</strong> They use cameras as "eyes" to see you and microphones as
-                        "ears" to hear commands.</li>
-                    <li><strong>Artificial Intelligence (The Brain):</strong> A powerful computer processes data to make
-                        decisions and understand speech using models like GPT.</li>
-                    <li><strong>Actuators (The Muscles):</strong> Electric motors act like muscles, allowing them to
-                        move their arms and walk smoothly.</li>
+        <!-- Intro / Definition Section -->
+        <section class="section-container wide-container flex-row">
+            <div class="content-image">
+                <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2070&auto=format&fit=crop"
+                    alt="Humanoid Robot Interaction">
+            </div>
+            <div class="content-text text-left">
+                <h2 class="sub-heading">What are Humanoid Robots?</h2>
+                <p>Humanoid robots are designed to look and act like humans. They have a head, torso, two arms, and two
+                    legs.</p>
+
+                <h3 class="mini-heading">Key Features:</h3>
+                <ul class="feature-list">
+                    <li><strong>Interaction:</strong> They can talk and interact with people socially.</li>
+                    <li><strong>Movement:</strong> They can walk, jump, and even dance.</li>
+                    <li><strong>Uses:</strong> Customer service, healthcare assistants, and research.</li>
                 </ul>
-
-                <h2 style="margin-top: 40px;">Famous Examples</h2>
-                <ol style="list-style-position: inside; color: rgba(255,255,255,0.8);">
-                    <li style="margin-bottom: 15px;"><strong>Ameca (The Most Realistic):</strong> Known for its
-                        incredibly realistic facial expressions. It can smile, frown, and chat with people naturally.
-                    </li>
-                    <li style="margin-bottom: 15px;"><strong>Atlas (The Gymnast):</strong> Built by Boston Dynamics,
-                        this robot acts like an athlete. It can do backflips, parkour, and run over rough terrain.</li>
-                    <li style="margin-bottom: 15px;"><strong>Tesla Optimus (The Worker):</strong> Designed by Elon
-                        Musk's team to help in factories and eventually in our homes to do daily chores.</li>
-                </ol>
             </div>
+        </section>
 
-            <!-- Future -->
-            <div class="info-grid fade-in-up delay-2">
-                <div class="info-text">
-                    <h2>What does the future hold?</h2>
-                    <ul>
-                        <li><strong>Space Exploration:</strong> They will go to Mars before humans to build bases.</li>
-                        <li><strong>Elderly Care:</strong> They will act as nurses and companions for older people.</li>
-                        <li><strong>Home Assistants:</strong> Imagine a robot that cooks dinner and cleans your room!
-                        </li>
-                    </ul>
+        <!-- Technical Specs Section -->
+        <section class="section-container wide-container text-left">
+            <h2 class="sub-heading center-text">How Do They Work?</h2>
+            <ul class="detailed-list">
+                <li>
+                    <strong>Sensors (The Senses):</strong>
+                    They use cameras as "eyes" to see you and microphones as "ears" to hear commands.
+                </li>
+                <li>
+                    <strong>Artificial Intelligence (The Brain):</strong>
+                    A powerful computer processes data to make decisions and understand speech using models like GPT.
+                </li>
+                <li>
+                    <strong>Actuators (The Muscles):</strong>
+                    Electric motors act like muscles, allowing them to move their arms and walk smoothly.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Famous Examples Section -->
+        <section class="section-container bg-darker full-width">
+            <div class="wide-container center-text">
+                <h2 class="sub-heading center-text">Famous Examples</h2>
+                <div class="examples-list">
+                    <div class="example-item">
+                        <h3>1. Ameca (The Most Realistic)</h3>
+                        <p>Known for its incredibly realistic facial expressions. It can smile, frown, and chat with
+                            people naturally.</p>
+                    </div>
+                    <div class="example-item">
+                        <h3>2. Atlas (The Gymnast)</h3>
+                        <p>Built by Boston Dynamics, this robot acts like an athlete. It can do backflips, parkour, and
+                            run over rough terrain.</p>
+                    </div>
+                    <div class="example-item">
+                        <h3>3. Tesla Optimus (The Worker)</h3>
+                        <p>Designed by Elon Musk's team to help in factories and eventually in our homes to do daily
+                            chores.</p>
+                    </div>
                 </div>
-                <div class="image-container">
-                    <!-- Placeholder for 'Developing Humanoid Robots' using the same humanoid image for now or a new one can be generated if requested, resizing to fit -->
-                    <img src="humanoid_robot_1769535474644.png" style="object-fit:cover; height: 100%;"
-                        alt="Future Robotics">
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="section-container wide-container text-left">
+            <h2 class="sub-heading center-text">What does the future hold?</h2>
+            <ul class="detailed-list">
+                <li><strong>Space Exploration:</strong> They will go to Mars before humans to build bases.</li>
+                <li><strong>Elderly Care:</strong> They will act as nurses and companions for older people.</li>
+                <li><strong>Home Assistants:</strong> Imagine a robot that cooks dinner and cleans your room!</li>
+            </ul>
+
+            <div class="future-images-grid">
+                <div class="future-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1546776310-eef45dd6d63c?q=80&w=2610&auto=format&fit=crop"
+                        alt="Robot Thinking">
+                    <div class="img-caption">Developing Humanoid Robots</div>
+                </div>
+                <div class="future-img-wrapper">
+                    <img src="https://plus.unsplash.com/premium_photo-1682124651258-410b25fa9dc0?q=80&w=1921&auto=format&fit=crop"
+                        alt="Robot Assisting Human">
                 </div>
             </div>
+        </section>
 
-            <!-- Video -->
-            <div class="video-container fade-in-up delay-2">
-                <!-- Embedding a relevant tech video placeholder as per screenshot -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k6cnqT7B3ec"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Video Section -->
+        <section class="section-container bg-darker full-width">
+            <div class="video-wrapper">
+                <h2 class="sub-heading center-text">Watch: The Future of Humanoids</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/k6cnqT7B3ec?start=2"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; 2026 Robots World - Designed by Omar Mustafa</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Instagram</a>
-            </div>
-        </div>
+    <footer class="main-footer">
+        <p>&copy; 2026 Robots World - Designed by Omar Mustafa</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 
 </html>
