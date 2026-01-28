@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Robot Simulator - Robots in the World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            overflow: hidden;
+            /* Prevent scrolling on simulator page */
+        }
+
+        #canvas-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .simulator-ui {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            background: rgba(10, 10, 10, 0.8);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            text-align: center;
+            pointer-events: none;
+            /* Let mouse clicks pass through to canvas if needed, but here we just show text */
+        }
+
+        .simulator-ui h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00d4ff;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .simulator-ui p {
+            font-family: 'Inter', sans-serif;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        #gui-container {
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">ROBOTS<span class="highlight">WORLD</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="humanoid.html">Humanoid Robots</a></li>
+                <li><a href="industrial.html">Industrial Robots</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="simulator.html" class="active">Simulator</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="canvas-container"></div>
+    <div id="labels-container"></div>
+    <div id="neural-vis-container">
+        <h3>NEURAL ACTIVITY</h3>
+        <canvas id="neural-canvas"></canvas>
+    </div>
+    <div id="gui-container"></div>
+    <div id="robot-camera-label">ROBOT VISION TEST</div>
+    <div id="robot-camera-border"></div>
+
+    <div class="simulator-ui">
+        <h2>Interactive 3D Model</h2>
+        <p>Click and Drag to Rotate | Scroll to Zoom</p>
+    </div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lil-gui@0.19.1/dist/lil-gui.umd.min.js"></script>
+    <script src="simulator.js"></script>
+</body>
+
+</html>

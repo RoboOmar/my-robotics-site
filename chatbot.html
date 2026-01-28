@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Chatbot - Robots in the World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">ROBOTS<span class="highlight">WORLD</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="humanoid.html">Humanoid Robots</a></li>
+                <li><a href="industrial.html">Industrial Robots</a></li>
+                <li><a href="chatbot.html" class="active">Chatbot</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="simulator.html">Simulator</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section for Chatbot -->
+        <section class="hero"
+            style="height: 50vh; background-image: url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2065&auto=format&fit=crop');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Smart AI Chatbot</h1>
+                <p class="hero-subtitle">Ask me anything about robots!</p>
+            </div>
+        </section>
+
+        <!-- Chat Interface Section -->
+        <section class="section-container wide-container">
+            <div class="chat-wrapper">
+                <div class="chat-box" id="chat-box">
+                    <div class="chat-message bot-message">
+                        Hello! I am the Robots World AI. You can ask me about Humanoid Robots, Industrial Robots, or the
+                        future of robotics. How can I help you today?
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Robots World - Designed by Omar Mustafa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

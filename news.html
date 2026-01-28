@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics News - Robots in the World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">ROBOTS<span class="highlight">WORLD</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="humanoid.html">Humanoid Robots</a></li>
+                <li><a href="industrial.html">Industrial Robots</a></li>
+                <li><a href="chatbot.html">Chatbot</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="simulator.html">Simulator</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section for News -->
+        <section class="hero"
+            style="height: 50vh; background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Latest Robotics News</h1>
+                <p class="hero-subtitle">Stay updated with the latest breakthroughs in AI and Robotics</p>
+            </div>
+        </section>
+
+        <!-- News Grid Section -->
+        <section class="section-container wide-container full-width">
+            <div id="news-container" class="examples-list">
+                <!-- News items will be injected here by news.js -->
+                <div class="example-item">
+                    <h3>Loading News...</h3>
+                    <p>Fetching the latest updates from the world of robotics.</p>
+                </div>
+            </div>
+            <p id="api-status" style="margin-top: 2rem; color: #666; font-size: 0.8rem; display: none;"></p>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Robots World - Designed by Omar Mustafa</p>
+    </footer>
+
+    <script src="news.js"></script>
+</body>
+
+</html>
